@@ -15,11 +15,6 @@ export class NewsItem extends Component {
         const d = new Date(a);
         const publishDate = d.toGMTString();
 
-
-        
-       
-
-
         return (
             <div >
                

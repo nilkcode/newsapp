@@ -41,13 +41,17 @@ export class News extends Component {
    }
 
    async componentDidMount() {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=335ba5fd43e6475ba7100620daf57b27&pageSize=${this.props.pageSize}`;
-        this.setState({loading:true})
-        let data = await fetch(url);
-        let parsedData = await data.json();
+        // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=335ba5fd43e6475ba7100620daf57b27&pageSize=${this.props.pageSize}`;
+        // this.setState({loading:true})
+        // let data = await fetch(url);
+        // let parsedData = await data.json();
 
-        console.log(parsedData);
-        this.setState({article:parsedData.articles,totalResults:parsedData.totalResults,loading:false})
+        // console.log(parsedData);
+        // this.setState({article:parsedData.articles,totalResults:parsedData.totalResults,loading:false})
+        
+        //....please refere above code for pratice coding this is working code for refactoring it comment --/
+  
+        this.updateNewsPage();
    }
 
    // note :: async function wait inside the body of await to resolve some promises
