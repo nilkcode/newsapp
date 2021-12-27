@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 
 import { Link}from "react-router-dom";
 
-export class navbar extends Component {
+const NavBar = () => {
  
 
-  render() {
+
     return (
       <div>
-           <nav className="navbar navbar-expand-lg navbar-light bg-light p-2">
+           <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark p-2 text-white">
                 <Link className="navbar-brand" to="/">NewWorld</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ export class navbar extends Component {
                     <li className="nav-item"><Link className="nav-link" to="/general">General</Link></li>
 
                     <li className="nav-item"><Link className="nav-link" to="/business">Business</Link></li>
-                    <li className="nav-item"><Link className="nav-link" to="/entertainment">Intertainment</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/entertainment">Entertainment</Link></li>
                      <li className="nav-item"><Link className="nav-link" to="/health">Health</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/science">Science</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/sports">Sports</Link></li>
@@ -34,8 +34,8 @@ export class navbar extends Component {
             </nav>
       </div>
     )
-  }
+ 
 }
 
-export default navbar
+export default NavBar
 
