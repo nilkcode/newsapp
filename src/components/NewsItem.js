@@ -2,7 +2,7 @@ import React from 'react'
 
 const  NewsItem = (props) => {
    
-        let{title , description,imageUrl ,newsUrl,author,date,source } = props;
+        let{title , description,imageUrl ,newsUrl,author, date,source } = props;
         const a = date;
         const d = new Date(a);
         const publishDate = d.toGMTString();
